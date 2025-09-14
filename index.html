@@ -27,42 +27,47 @@
 <body>
   <main>
       <!-- Logo: cream circle + arched pastel letters -->
-<svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 300 300" aria-label="Hack-En Studio logo">
-  <!-- cream circle -->
-  <circle cx="150" cy="150" r="130" fill="#FFF3D6"/>
-  
-  <!-- arcs to place text on -->
+    <!-- Hack-En Studio logo: cream circle, BOTH lines curve upward, alternating vivid pastels (no adjacent similar hues) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="340" viewBox="0 0 340 340" aria-label="Hack-En Studio logo">
+  <!-- cream base -->
+  <circle cx="170" cy="170" r="150" fill="#FFF1D6"/>
+
   <defs>
-    <!-- upper arc (slightly above center) -->
-    <path id="upperArc" d="M 40 155 A 110 110 0 0 1 260 155" />
-    <!-- lower arc (mirrored, slightly below center) -->
-    <path id="lowerArc" d="M 260 165 A 110 110 0 0 1 40 165" />
+    <!-- both arcs are SMILE-shaped (upward) -->
+    <!-- top line for HackEn -->
+    <path id="arcTop" d="M 60 165 A 110 110 0 0 1 280 165"/>
+    <!-- second line for Studio (parallel, slightly lower) -->
+    <path id="arcTop2" d="M 70 205 A 120 120 0 0 1 270 205"/>
   </defs>
 
-  <!-- upper text: HackEn (arched) -->
-  <text font-family="Arial, 'Helvetica Neue', 'Noto Sans JP', sans-serif" font-size="28" font-weight="700" text-anchor="middle">
-    <textPath href="#upperArc" startOffset="50%">
-      <tspan fill="#FFCFE1">H</tspan>
-      <tspan fill="#CFEAFE">a</tspan>
-      <tspan fill="#FFD8C2">c</tspan>
-      <tspan fill="#DFF7D8">k</tspan>
-      <tspan fill="#E6D8FF">E</tspan>
-      <tspan fill="#FFF3B0">n</tspan>
+  <!-- H a c k E n : warm/cool alternating to avoid adjacent similar hues -->
+  <!-- palette: Pink(#FF5FA8), Sky(#2EB6FF), Salmon(#FF9A5E), Teal(#00D1C1), Amber(#FFB200), Violet(#7E7BFF) -->
+  <text font-family="Arial, Helvetica, 'Noto Sans JP', sans-serif" font-size="34" font-weight="800" text-anchor="middle" style="letter-spacing:0.5px">
+    <textPath href="#arcTop" startOffset="50%">
+      <tspan fill="#FF5FA8">H</tspan>
+      <tspan fill="#2EB6FF">a</tspan>
+      <tspan fill="#FF9A5E">c</tspan>
+      <tspan fill="#00D1C1">k</tspan>
+      <tspan fill="#FFB200">E</tspan>
+      <tspan fill="#7E7BFF">n</tspan>
     </textPath>
   </text>
 
-  <!-- lower text: Studio (arched) -->
-  <text font-family="Arial, 'Helvetica Neue', 'Noto Sans JP', sans-serif" font-size="30" font-weight="800" text-anchor="middle">
-    <textPath href="#lowerArc" startOffset="50%">
-      <tspan fill="#FFDCCB">S</tspan>
-      <tspan fill="#D6FFF6">t</tspan>
-      <tspan fill="#FFCFE1">u</tspan>
-      <tspan fill="#CFEAFE">d</tspan>
-      <tspan fill="#FFD8C2">i</tspan>
-      <tspan fill="#DFF7D8">o</tspan>
+  <!-- S t u d i o : also alternating, different order to keep variety -->
+  <!-- palette reordered: Sky, Pink, Teal, Salmon, Violet, Amber -->
+  <text font-family="Arial, Helvetica, 'Noto Sans JP', sans-serif" font-size="36" font-weight="900" text-anchor="middle" style="letter-spacing:0.5px">
+    <textPath href="#arcTop2" startOffset="50%">
+      <tspan fill="#2EB6FF">S</tspan>
+      <tspan fill="#FF5FA8">t</tspan>
+      <tspan fill="#00D1C1">u</tspan>
+      <tspan fill="#FF9A5E">d</tspan>
+      <tspan fill="#7E7BFF">i</tspan>
+      <tspan fill="#FFB200">o</tspan>
     </textPath>
   </text>
 </svg>
+
+    
 
     <h1>Hack-En Studio</h1>
     <p class="tagline">
@@ -70,12 +75,11 @@
       Learning through play, reimagining how we learn.
     </p>
 
-    <h2>About（日本語）</h2>
+    <h2>About</h2>
     <p>
       Hack-En Studio（ハッケンスタジオ）は、「発見＝ハッケン」と「縁＝En」をかけ合わせた名前の通り、学びの縁をハックすることを掲げる小さなユニットです。教育ゲームや体験デザインを通じて、新しい学びのかたちを探求しています。
     </p>
 
-    <h2>About (English)</h2>
     <p>
       Hack-En Studio is a small creative unit dedicated to "hacking connections for learning." True to its name—Hack (to edit and reimagine) and En (meaning connection)—we design playful experiences and educational games to explore new ways of learning.
     </p>
