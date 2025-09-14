@@ -26,58 +26,58 @@
 </head>
 <body>
   <main>
-      <!-- Logo: cream circle + arched pastel letters -->
-    <!-- Hack-En Studio logo: cream circle, BOTH lines curve upward, alternating vivid pastels (no adjacent similar hues) -->
-<svg xmlns="http://www.w3.org/2000/svg" width="340" height="340" viewBox="0 0 340 340" aria-label="Hack-En Studio logo">
-  <!-- cream base -->
-  <circle cx="170" cy="170" r="150" fill="#FFF1D6"/>
 
-  <defs>
-    <!-- both arcs are SMILE-shaped (upward) -->
-    <!-- top line for HackEn -->
-    <path id="arcTop" d="M 60 165 A 110 110 0 0 1 280 165"/>
-    <!-- second line for Studio (parallel, slightly lower) -->
-    <path id="arcTop2" d="M 70 205 A 120 120 0 0 1 270 205"/>
-  </defs>
 
-  <!-- H a c k E n : warm/cool alternating to avoid adjacent similar hues -->
-  <!-- palette: Pink(#FF5FA8), Sky(#2EB6FF), Salmon(#FF9A5E), Teal(#00D1C1), Amber(#FFB200), Violet(#7E7BFF) -->
-  <text font-family="Arial, Helvetica, 'Noto Sans JP', sans-serif" font-size="34" font-weight="800" text-anchor="middle" style="letter-spacing:0.5px">
-    <textPath href="#arcTop" startOffset="50%">
-      <tspan fill="#FF5FA8">H</tspan>
-      <tspan fill="#2EB6FF">a</tspan>
-      <tspan fill="#FF9A5E">c</tspan>
-      <tspan fill="#00D1C1">k</tspan>
-      <tspan fill="#FFB200">E</tspan>
-      <tspan fill="#7E7BFF">n</tspan>
-    </textPath>
-  </text>
 
-  <!-- S t u d i o : also alternating, different order to keep variety -->
-  <!-- palette reordered: Sky, Pink, Teal, Salmon, Violet, Amber -->
-  <text font-family="Arial, Helvetica, 'Noto Sans JP', sans-serif" font-size="36" font-weight="900" text-anchor="middle" style="letter-spacing:0.5px">
-    <textPath href="#arcTop2" startOffset="50%">
-      <tspan fill="#2EB6FF">S</tspan>
-      <tspan fill="#FF5FA8">t</tspan>
-      <tspan fill="#00D1C1">u</tspan>
-      <tspan fill="#FF9A5E">d</tspan>
-      <tspan fill="#7E7BFF">i</tspan>
-      <tspan fill="#FFB200">o</tspan>
-    </textPath>
-  </text>
+
+    <!-- Hack-En Studio – recommended flat logo (SVG) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="180" viewBox="0 0 560 180" role="img" aria-label="Hack-En Studio logo">
+  <title>Hack-En Studio</title>
+  <desc>Cream circle badge with playful H/E monogram and wordmark in clean sans-serif.</desc>
+
+  <!-- palette -->
+  <!-- cream: #FFF1D6 | charcoal: #222 | pink: #FF5FA8 | sky: #2EB6FF | salmon: #FF9A5E | lime: #5ED37D | violet: #7E7BFF -->
+
+  <!-- badge background -->
+  <circle cx="90" cy="90" r="70" fill="#FFF1D6"/>
+
+  <!-- monogram: H (pink) -->
+  <g transform="translate(50,40)">
+    <rect x="0" y="0" width="18" height="100" rx="9" fill="#FF5FA8"/>
+    <rect x="52" y="0" width="18" height="100" rx="9" fill="#2EB6FF"/>
+    <rect x="0" y="42" width="70" height="16" rx="8" fill="#FF9A5E"/>
+  </g>
+
+  <!-- monogram: E (lime/violet) overlay, slightly offset for playfulness -->
+  <g transform="translate(50,40)">
+    <rect x="86" y="0" width="18" height="100" rx="9" fill="#5ED37D"/>
+    <rect x="86" y="0" width="52" height="16" rx="8" fill="#7E7BFF"/>
+    <rect x="86" y="42" width="44" height="16" rx="8" fill="#2EB6FF"/>
+    <rect x="86" y="84" width="36" height="16" rx="8" fill="#FF5FA8"/>
+  </g>
+
+  <!-- wordmark -->
+  <g transform="translate(200,64)">
+    <text x="0" y="0" font-family="Arial, Helvetica, 'Noto Sans JP', sans-serif" font-size="34" font-weight="800" fill="#222" dominant-baseline="hanging">
+      Hack-En
+    </text>
+    <text x="0" y="42" font-family="Arial, Helvetica, 'Noto Sans JP', sans-serif" font-size="28" font-weight="600" fill="#222" dominant-baseline="hanging" opacity="0.9">
+      Studio
+    </text>
+  </g>
 </svg>
+
 
     
 
     <h1>Hack-En Studio</h1>
     <p class="tagline">
-      遊びを通じて、学びをもっと自由に。<br>
       Learning through play, reimagining how we learn.
     </p>
 
     <h2>About</h2>
     <p>
-      Hack-En Studio（ハッケンスタジオ）は、「発見＝ハッケン」と「縁＝En」をかけ合わせた名前の通り、学びの縁をハックすることを掲げる小さなユニットです。教育ゲームや体験デザインを通じて、新しい学びのかたちを探求しています。
+      Hack-En Studio（ハッケンスタジオ）は、「発見＝ハッケン」と「縁＝En」をかけ合わせた名前の通り、学びの縁をハックすることを掲げる小さなユニットです。アナログゲームや体験デザインを通じて、新しい学びのかたちを探求しています。
     </p>
 
     <p>
